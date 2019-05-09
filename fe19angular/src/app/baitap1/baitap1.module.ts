@@ -6,17 +6,16 @@ import { Baitap1SlideComponent } from './baitap1-slide/baitap1-slide.component';
 import { Baitap1SmartphoneComponent } from './baitap1-smartphone/baitap1-smartphone.component';
 import { Baitap1LaptopComponent } from './baitap1-laptop/baitap1-laptop.component';
 import { Baitap1FooterComponent } from './baitap1-footer/baitap1-footer.component';
-import { ItemComponent } from './baitap1-smartphone/item/item.component';
-import { LaptopItemComponent } from './baitap1-laptop/laptop-item/laptop-item.component';
 import { FooterItemComponent } from './baitap1-footer/footer-item/footer-item.component';
+import { Baitap1ItemComponent } from './baitap1-item/baitap1-item.component';
 
 @NgModule({
-  declarations: [Baitap1Component, Baitap1HeaderComponent, Baitap1SlideComponent, Baitap1SmartphoneComponent, Baitap1LaptopComponent, Baitap1FooterComponent, ItemComponent, LaptopItemComponent, FooterItemComponent],
+  declarations: [Baitap1Component, Baitap1HeaderComponent, Baitap1SlideComponent, Baitap1SmartphoneComponent, Baitap1LaptopComponent, Baitap1FooterComponent , FooterItemComponent, Baitap1ItemComponent],
   imports: [
     CommonModule
   ],
   exports: [
-    Baitap1Component, Baitap1HeaderComponent, Baitap1SlideComponent, Baitap1SmartphoneComponent, Baitap1LaptopComponent, Baitap1FooterComponent,ItemComponent, LaptopItemComponent, FooterItemComponent
+    Baitap1Component, Baitap1HeaderComponent, Baitap1SlideComponent, Baitap1SmartphoneComponent, Baitap1LaptopComponent, Baitap1FooterComponent, FooterItemComponent, Baitap1ItemComponent
   ]
 })
 export class Baitap1Module { }
