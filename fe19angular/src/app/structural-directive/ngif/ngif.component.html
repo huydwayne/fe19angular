@@ -1,0 +1,17 @@
+<p *ngIf="status">
+  {{name}}
+</p>
+<button class="btn btn-primary" (click)="hidden()">Hidden</button>
+<button class="btn btn-success" (click)="show()">Show</button>
+
+<div class="mt-4" *ngIf ="statusLogin; else NoiDungElse" >
+  <button class="btn btn-danger" (click)="dangXuat()">Đăng xuất</button>
+  <p>Xin chào {{name}}</p>
+</div>
+
+<ng-template #NoiDungElse>
+  <div class="mt-4">
+    <button class="btn btn-success" (click)="dangNhap()">Đăng nhập</button>
+    <p>Vui lòng đăng nhập</p>
+  </div>
+</ng-template>

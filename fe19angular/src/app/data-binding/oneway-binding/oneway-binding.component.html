@@ -1,0 +1,16 @@
+<h1 style="color:red">OneWay Binding</h1>
+<p>Một chiều từ TS -> HTML</p>
+<h1>DEMO:</h1>
+<p>
+<!-- Interpolation -->
+{{name}}
+</p>
+
+<!-- Property Binding -->
+<input type="text" [value]="name" #thamso>
+<img [src]="img" alt="">
+
+<!-- Event Binding -->
+<div>
+  <button (click)="eventBinding(thamso.value)">Eventclick</button>
+</div>

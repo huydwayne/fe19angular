@@ -1,0 +1,13 @@
+<h2>Register form</h2>
+<h6>Email:</h6>
+<input type="text" [(ngModel)] = "email">
+<h6>Fullname:</h6>
+<input type="text" #thamso>
+<button class="btn btn-success d-block mt-3" (click)="eventBinding(thamso.value)">Submit</button>
+<div>
+  <p>Email:{{email}}</p>
+</div>
+<div>
+  <p>Fullname:{{fullname}}</p>
+</div>
+
