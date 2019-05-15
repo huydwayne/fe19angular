@@ -1,0 +1,17 @@
+<h1 style="color:red">Attribute Directive</h1>
+<h2 style="color:seagreen">---ngClass---</h2>
+<app-ngclass></app-ngclass>
+<h2 style="color:seagreen">---ngStyle---</h2>
+<app-ngstyle></app-ngstyle>
+
+<div appHighLight>--*Attribute Directive--</div>
+
+<ng-container *ngIf="mang !== null">
+    <div *ngFor = "let item of mang">{{item}}</div>
+</ng-container>
+
+<div *ngTemplateOutlet ="template"></div>
+
+<ng-template #template>
+    <div>Nội dung Template</div>
+</ng-template>

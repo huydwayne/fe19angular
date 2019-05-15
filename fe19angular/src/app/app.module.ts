@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import {Baitap1Module} from './baitap1/baitap1.module';
 import { DataBindingModule } from './data-binding/data-binding.module'
 import { StructuralDirectiveModule } from './structural-directive/structural-directive.module'
+import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module'
+import { BaitapNgifModule } from './baitap-ngif/baitap-ngif.module'
+import { BaitapSanphamModule } from './baitap-sanpham/baitap-sanpham.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,10 @@ import { StructuralDirectiveModule } from './structural-directive/structural-dir
     AppRoutingModule,
     Baitap1Module,
     DataBindingModule,
-    StructuralDirectiveModule
+    StructuralDirectiveModule,
+    AttributeDirectiveModule,
+    BaitapNgifModule,
+    BaitapSanphamModule
   ],
   providers: [],
   bootstrap: [AppComponent]

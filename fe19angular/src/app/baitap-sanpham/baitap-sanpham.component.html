@@ -1,0 +1,40 @@
+<div class="title py-3 px-4" style="background-color: #343A40; color: white">
+  <h3>Quản lý danh mục sản phẩm</h3>
+</div>
+<!-- INPUT PLACE -->
+<div class="inputPlace py-3 px-5">
+  <div class="form-group">
+    <label for="maSP">Mã SP</label>
+    <input type="text" class="form-control" id="maSP" #maSP>
+  </div>
+  <div class="form-group">
+    <label for="tenSP">Tên SP</label>
+    <input type="text" class="form-control" id="tenSP" #tenSP>
+  </div>
+  <div class="form-group">
+    <label for="price">Giá</label>
+    <input type="text" class="form-control" id="price" #price>
+  </div>
+  <button class="btn btn-success mt-2" (click)="getInput(maSP.value, tenSP.value, price.value)">Thêm sản phẩm</button>
+</div>
+<!-- TABLE PLACE -->
+<div class="tablePlace mt-3">
+  <table class="table">
+    <thead style="background-color: #212529; color: white">
+      <tr>
+        <th>STT</th>
+        <th>Mã SP</th>
+        <th>Tên SP</th>
+        <th>Giá</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of DSSP,let stt = index" [ngClass]="{tableColor: (stt+1)%2===0}">
+        <td>{{stt+1}}</td>
+        <td>{{item.maSP}}</td>
+        <td>{{item.tenSP}}</td>
+        <td>{{item.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
