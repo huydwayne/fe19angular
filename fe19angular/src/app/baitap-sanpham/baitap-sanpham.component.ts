@@ -17,10 +17,17 @@ export class BaitapSanphamComponent implements OnInit {
   getLocalStorage(){
     this.DSSP= JSON.parse(localStorage.getItem("DSSP"));
   }
-  constructor() { }
+
+  constructor() {
+
+   }
 
   ngOnInit() {
+<<<<<<< HEAD
     if (this.DSSP!==null){
+=======
+    if (JSON.parse(localStorage.getItem("DSSP"))!==null){
+>>>>>>> af071a4f26a3b6781acbf810fabfb31d31b83917
       this.getLocalStorage();
     }
   }
