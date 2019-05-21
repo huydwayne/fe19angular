@@ -9,6 +9,8 @@ import { StructuralDirectiveModule } from './structural-directive/structural-dir
 import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module'
 import { BaitapNgifModule } from './baitap-ngif/baitap-ngif.module'
 import { BaitapSanphamModule } from './baitap-sanpham/baitap-sanpham.module';
+import { InteractionModule } from './interaction/interaction.module';
+import { DatveBusModule } from './datve-bus/datve-bus.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -21,7 +23,9 @@ import { BaitapSanphamModule } from './baitap-sanpham/baitap-sanpham.module';
     StructuralDirectiveModule,
     AttributeDirectiveModule,
     BaitapNgifModule,
-    BaitapSanphamModule
+    BaitapSanphamModule,
+    InteractionModule,
+    DatveBusModule
   ],
   providers: [],
   bootstrap: [AppComponent]

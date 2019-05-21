@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baitap-sanpham.component.scss']
 })
 export class BaitapSanphamComponent implements OnInit {
-  DSSP:any = [];
-
+  public DSSP:any = [];
+  
   getInput(maSP, tenSP, price){
     let newSP = {maSP, tenSP, price};
     this.DSSP.push(newSP);
+    console.log(this.DSSP[0]);
     localStorage.setItem("DSSP",JSON.stringify(this.DSSP));
   }
   getLocalStorage(){
@@ -19,7 +20,9 @@ export class BaitapSanphamComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.getLocalStorage();
+    if (this.DSSP!==null){
+      this.getLocalStorage();
+    }
   }
 
 }
